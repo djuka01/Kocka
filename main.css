@@ -1,0 +1,109 @@
+/*****************************************************
+                    Global styles
+*****************************************************/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*****************************************************
+                      Layout
+*****************************************************/
+
+
+.container {
+  width: 800px;
+  height: 500px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 50px auto;
+  padding: 0;
+}
+
+.score {
+  width: 100%;
+  text-align: center;
+}
+
+#mainBody {
+ display: none;
+}
+
+#player1 {
+  width: 50%;
+  height: 446px;
+  float: left;
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+#player2 {
+  width: 50%;
+  height: 446px;
+  float: left;
+  border-top: 1px solid #ddd;
+}
+h5 {
+  padding: 10px;
+}
+h3 {
+  margin-top: 20px;
+}
+#k1, #k2 {
+  font-size: 80px;
+  padding: 60px 0 120px 0;
+}
+
+
+.round {
+  background-color: #c9302c;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  color: #fff;
+  margin: -27px 0 0 -27px;
+}
+/*****************************************************
+                    Specific styles
+*****************************************************/
+#pocBtn {
+  margin: 225px auto;
+  width: 150px;
+}
+
+[disabled] {
+  cursor: no-drop;
+  background-color: #f0ad4e !important;
+}
+[disabled]:hover {
+  background-color: #f0ad4e !important;
+}
+#startAgain{
+  display: none;
+}
+
+
+
+
+
+/*****************************************************
+                    Helper classes
+*****************************************************/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
